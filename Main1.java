@@ -17,8 +17,19 @@ public class Main1 {
         String tall1 = showInputDialog("Skriv inn et tall mellom 1 og 100, som øvre grense");
         String tall2 = showInputDialog("Skriv inn et tall til mellom 1 og 100, som nedre grense");
 
-        int ovreGrense = Integer.parseInt(tall1);
-        int nedreGrense = Integer.parseInt(tall2);
+        int ovreGrense;
+        int nedreGrense;
+
+        try{
+            ovreGrense = Integer.parseInt(tall1);
+            nedreGrense = Integer.parseInt(tall2);
+        }
+        catch(Exception e){
+            tall1=0;
+            tall2=0;
+            System.out.println(e);
+        }
+
 
         if (ovreGrense <= nedreGrense){
             showMessageDialog(null, "Øvre grense kan ikke være mindre enn eller lik nedre grense");
