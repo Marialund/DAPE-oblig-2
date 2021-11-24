@@ -28,6 +28,5 @@ public class Main1 {
         else{
             int sum = 0;
         }
-
     }
 }

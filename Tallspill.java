@@ -43,5 +43,6 @@ class Tallspill
       gjetninger fra bruker inntil det gjettes riktig.
       Når det skjer, avsluttes runden med passe
       meldinger til spilleren. */
+        
     }
 }
